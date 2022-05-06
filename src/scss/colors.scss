@@ -1,0 +1,53 @@
+.colors{
+  &__container{
+    gap: 168px;
+  }
+  &__item{
+    display: flex;
+    flex-direction: column;
+    gap: 19.5px;
+  }
+  &__list{
+    display: flex;
+    gap: 19px;
+  }
+}
+.colors-main{
+  &_item{
+    border-radius: 50%;
+    width: 65px;
+    height: 65px;
+    display: flex;
+    flex-direction: column;
+
+  }
+  &_gold{
+    background: #BC9B62;
+  }
+  &_red{
+    background: #B93337;
+  }
+  &_cyan{
+    background: #1A2141;
+  }
+}
+.colors-second{
+  &_item{
+    border-radius: 50%;
+    width: 65px;
+    height: 65px;
+  }
+  &_grey{
+    background-color: $greyColor;
+  }
+  &_body{
+    background-color: $bodyColor;
+    border: 1px solid #8C999B;
+  }
+  &_black{
+    background-color: $blackColor;
+  }
+  &_blue{
+    background-color: $blueColor;
+  }
+}

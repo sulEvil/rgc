@@ -1,5 +1,21 @@
 //====================================================================================================
-
+.header{
+  background-color: #BC9B62;
+  &__container{
+    padding-top: 67px;
+    padding-bottom: 67px;
+    display: flex;
+    @include adaptiveValue('gap', 83, 40)
+  }
+  &__title{
+    font-family: 'AGBengaly';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 150%;
+    color: $bodyColor;
+  }
+}
 //====================================================================================================
 
 //Burger

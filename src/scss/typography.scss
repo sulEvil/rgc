@@ -1,0 +1,120 @@
+.typography{
+  &__container{
+    flex-direction: column;
+  }
+  &__title{
+    margin-bottom: 38.5px;
+  }
+  &__block:not(:last-child){
+    margin-bottom: 110px;
+  }
+}
+.fonts{
+  &__title{
+    margin-bottom: 38px;
+  }
+  &__lists{
+    display: flex;
+    gap: 109px;
+  }
+  &__list{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    font-style: normal;
+    &_bengaly{
+      font-family: 'AGBengaly';
+    }
+  }
+  &__item{
+    &_bold{
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 150%;
+    }
+    &_light{
+      font-weight: 300;
+    }
+    &_regular{
+      font-weight: 400;
+    }
+    &_medium{
+      font-weight: 500;
+    }
+    &_semibold{
+      font-weight: 600;
+    }
+    &_bold{
+      font-weight: 700;
+    }
+  }
+
+}
+.titles{
+  &__title{
+    margin-bottom: 45px;
+    font-family: 'Noto Sans';
+
+  }
+  &__lists{
+    display: flex;
+    gap: 115px;
+  }
+  &__list{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    line-height: 150%;
+  }
+}
+.promo{
+  font-family: 'AGBengaly';
+  &__item{
+    &_h1{
+      font-size: 40px;
+    }
+    &_h2{
+      font-size: 30px;
+    }
+    &_h3{
+      font-size: 22px;
+    }
+    &_h4{
+      font-size: 18px;
+    }
+  }
+}
+.block-title{
+  &__item {
+    line-height: 145%;
+    &_h1{
+      font-size: 28px;
+    }
+    &_h2{
+      font-size: 24px;
+    }
+    &_h3{
+      font-size: 18px;
+    }
+    &_h4{
+      font-size: 16px;
+    }
+  }
+}
+.paragraph{
+  &__title{
+    margin-bottom: 24px;
+  }
+  &__text{
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 150%;
+    width: 50%;
+  }
+  &__part{
+    margin-bottom: 40px;
+  }
+}
