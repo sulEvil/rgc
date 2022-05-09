@@ -1,6 +1,7 @@
 .colors{
   &__container{
     gap: 168px;
+    flex-direction: row;
   }
   &__item{
     display: flex;

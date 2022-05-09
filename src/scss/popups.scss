@@ -1,0 +1,48 @@
+.popups{
+  background: rgb(#374248, 0.5);
+  mix-blend-mode: multiply;
+  backdrop-filter: blur(4px);
+  padding: 49px 0;
+  &__container{
+    border: none;
+    display: flex;
+    flex-direction: row;
+    gap: 64px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.popup{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  &__close{
+    display: flex;
+    justify-content: flex-end;
+    & svg{
+      cursor: pointer;
+    }
+  }
+  &__body{
+    padding: 32px 5px;
+    background: #F7F9FB;
+    box-shadow: 0px 2px 25px rgba(128, 143, 145, 0.07), 0px 2px 20px -3px rgba(123, 141, 143, 0.05);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 376px;
+    height: 135px;
+    text-align: center;
+  }
+  &__header{
+    display: inline-block;
+  }
+  &__text{
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 150%;
+    color: #374248;
+  }
+}

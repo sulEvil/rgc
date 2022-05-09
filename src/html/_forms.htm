@@ -1,0 +1,115 @@
+<section class="forms">
+    <div class="forms__container">
+        <h2 class="forms__title">
+            Формы . . . .
+        </h2>
+        <ul class="forms__list">
+            <li class="forms__form form">
+                <input type="text" class="input__text" placeholder="Ваши фамилия, имя и отчество*">
+                <label class="label">
+                    <span class="form-subtitle">
+                        Являетесь ли вы сотрудником Росгосцирка?
+                    </span>
+                    <span class="label__selection">
+                        <label class="label__radio">
+                            <input hidden class="input__radio" type="radio"
+                                   name="contact" value="phone">
+                            <span class="label__circle">
+                            </span>
+                            Да
+                        </label>
+                        <label class="label__radio">
+                            <input hidden class="input__radio" type="radio"
+                                   name="contact" value="phone">
+                            <span class="label__circle">
+                            </span>
+                            Нет
+                        </label>
+                    </span>
+                </label>
+                <label  class="label">
+                    <span class="form-subtitle">
+                        Обращение для:
+                    </span>
+                    <select class="label__select">
+                        <option  class="label__option" value="" disabled selected style='display:none;'>выберите из списка</option>
+                        <option value="" class="label__option">1</option>
+                        <option value="" class="label__option">2</option>
+                        <option value="" class="label__option">3</option>
+                        <option value="" class="label__option">4</option>
+                    </select>
+                </label>
+                <label class="label">
+                    <span class="form-subtitle">
+                        Тематика сообщения
+                    </span>
+                    <select class="label__select">
+                        <option  class="label__option" value="" disabled selected style='display:none;'>Запись на приём</option>
+                        <option value="" class="label__option">1</option>
+                        <option value="" class="label__option">2</option>
+                        <option value="" class="label__option">3</option>
+                        <option value="" class="label__option">4</option>
+                    </select>
+                </label>
+                <label class="label">
+                    <input type="text" class="input__text">
+                    <span class="input__placeholder">Ваш e-mail<span>*</span></span>
+                </label>
+                <input type="text" class="input__text" placeholder="Контактный телефон">
+                <textarea rows="8" class="input__textarea" placeholder="Текст сообщения*"></textarea>
+            </li>
+            <li class="forms__form form">
+                <input type="text" class="input__text" placeholder="Ваши фамилия, имя и отчество*">
+                <label class="label">
+                    <span class="form-subtitle">
+                        Являетесь ли вы сотрудником Росгосцирка?
+                    </span>
+                    <div class="label__selection">
+                        <label class="label__radio">
+                            <input hidden class="input__radio" type="radio"
+                                   name="contact" value="phone">
+                            <span class="label__circle">
+                            </span>
+                            Да
+                        </label>
+                        <label class="label__radio">
+                            <input hidden class="input__radio" type="radio"
+                                   name="contact" value="phone">
+                            <span class="label__circle">
+                            </span>
+                            Нет
+                        </label>
+                    </div>
+                </label>
+                <label class="label">
+                    <input type="text" class="input__text">
+                    <span class="input__placeholder">Ваш e-mail<span>*</span></span>
+                    <span class="input__hint">
+                        Это поле обязательно для заполнения
+                    </span>
+                </label>
+                <label class="label">
+                    <div class="label__checkbox-item">
+                        <label class="label__check">
+                            <input hidden class="input__check" type="checkbox"
+                                   name="check" value="notifications">
+                            <span class="label__checkbox">
+                            </span>
+                            Получить e-mail уведомление об ответе
+                        </label>
+                        <label class="label__check">
+                            <input hidden class="input__check" type="checkbox"
+                                   name="check" value="personal">
+                            <span class="label__checkbox">
+                            </span>
+                            С условиями обработки персональных данных ознакомлен
+                        </label>
+                    </div>
+                </label>
+                <span class="input__hint">
+                        Вы должны дать согласие на обработку персональных данных
+                </span>
+            </li>
+        </ul>
+    </div>
+</section>

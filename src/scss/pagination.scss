@@ -1,0 +1,36 @@
+.pagination{
+  &__title{
+    margin-bottom: 50px;
+  }
+  &__content{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+  }
+  &__numbers{
+    display: flex;
+    gap: 9px;
+    color: #8C999B;
+    font-weight: 500;
+    font-size: 18px;
+  }
+  &__number{
+    cursor: pointer;
+    transition: 0.3s all ease;
+    padding: 1px 3px;
+    &:hover{
+      color: #B93337;
+    }
+  }
+  &__active{
+    color: #B93337;
+  }
+  &__chevron{
+    cursor: pointer;
+  }
+}
+.chevron{
+  &_right{
+    transform: rotate(180deg);
+  }
+}

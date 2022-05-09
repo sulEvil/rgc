@@ -5,6 +5,7 @@
     padding-top: 67px;
     padding-bottom: 67px;
     display: flex;
+    flex-direction: row;
     @include adaptiveValue('gap', 83, 40)
   }
   &__title{

@@ -1,7 +1,4 @@
 .buttons{
-  &__container{
-    flex-direction: column;
-  }
   &__title{
   margin-bottom: 61.5px;
 
@@ -23,6 +20,12 @@
   &__button{
     &[disabled]{
       background-color: #CFD9DA;
+      &:hover{
+        background-color: #CFD9DA;
+      }
+      &:active{
+        background-color: #CFD9DA;
+      }
     }
     font-weight: 600;
     font-size: 16px;
@@ -34,6 +37,12 @@
     padding: 10px 42.5px;
     border-radius: 3px;
     position: relative;
+    &:hover{
+      background-color: #CD3135;
+    }
+    &:active{
+      background: #AE282C;
+    }
     &_hover{
       background-color: #CD3135;
     }
