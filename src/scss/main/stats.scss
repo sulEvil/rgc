@@ -1,0 +1,196 @@
+.stats{
+  padding-top: rem(36);
+  padding-bottom: rem(132);
+  overflow: hidden;
+  position: relative;
+  max-width: 1920px;
+  margin: 0 auto;
+  &__container{
+    height: rem(520);
+    margin-bottom: 100px;
+  }
+  &__center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &__beams{
+    position: absolute;
+    background: center / cover no-repeat url("@img/main/background/stats/beams-bg.png");
+    width: rem(752);
+    height: rem(752);
+    border-radius: 50%;
+    z-index: -1;
+    &-mask{
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+    }
+  }
+  &__circle{
+    position: absolute;
+    z-index: 1;
+    background: center / contain no-repeat url("@img/main/background/stats/circle.png");
+    width: rem(492);
+    height: rem(492);
+    border-radius: 50%;
+  }
+  &__points{
+    position: absolute;
+    z-index: 2;
+    background: center / contain no-repeat url("@img/main/background/stats/points.png");
+    width: rem(430);
+    height: rem(430);
+    border-radius: 50%;
+  }
+  &__content{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 3;
+  }
+  &__number{
+    font-family: 'AGBengaly';
+    font-style: normal;
+    font-weight: 400;
+  }
+  &__count{
+    font-size: 16px;
+    line-height: 22px;
+    color: #1A2141;
+  }
+  &__block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+  }
+  &__branch{
+    top: 0;
+    right: 39.51%;
+    font-size: 80px;
+    line-height: 85px;
+  }
+  &__employ{
+    top: 21.61%;
+    right: 62.75%;
+    font-size: 75px;
+    line-height: 80px;
+  }
+  &__animals{
+    font-size: 65px;
+    line-height: 69px;
+    top: 24.6%;
+    right: 23.29%;
+  }
+  &__circus{
+    top: 69.47%;
+    right: 65.54%;
+    font-size: 76px;
+    line-height: 81px;
+  }
+  &__shapito{
+    top: 74.88%;
+    right: 33.19%;
+    font-size: 88px;
+    line-height: 94px;
+  }
+  &__text{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  &__title{
+    font-family: 'AGBengaly';
+    font-size: 75px;
+    line-height: 80px;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    color: #BC9B62;
+    text-align: center;
+  }
+  &__subTitle{
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 34px;
+    color: #1A2141;
+  }
+  &__left-line{
+    top: 50%;
+    left: 32.5%;
+    height: rem(1);
+    width: rem(172);
+    background: $goldColor;
+  }
+  &__right-line{
+    top: 50%;
+    left: 67.5%;
+    height: rem(1);
+    width: rem(172);
+    background: $redColor;
+  }
+  &__year-from{
+    position: absolute;
+    font-family: 'AGBengaly';
+    font-size: 112px;
+    line-height: 123px;
+    color: $goldColor;
+    left: 6%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  &__year-to{
+    position: absolute;
+    font-family: 'AGBengaly';
+    font-size: 112px;
+    line-height: 123px;
+    color: $redColor;
+    right: 6%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+.beams{
+  &-right{
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 120px;
+    background: linear-gradient(to left, $bodyColor, transparent);
+  }
+  &-left{
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 120px;
+    background: linear-gradient(to right, $bodyColor, transparent);
+  }
+  &-top{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 200px;
+    background: linear-gradient($bodyColor, transparent);
+  }
+  &-bottom{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 200px;
+    background: linear-gradient(transparent, $bodyColor);
+  }
+}

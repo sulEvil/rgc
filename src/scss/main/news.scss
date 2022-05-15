@@ -1,0 +1,120 @@
+.news{
+  &__container{
+    padding-left: rem(48);
+    margin-bottom: rem(11);
+  }
+  &__title{
+    color: $goldColor;
+    @include adaptiveValue('font-size', 28, 18);
+    line-height: 145%;
+    margin-bottom: rem(36);
+  }
+  &__list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(rem(303), 1fr));
+    @include adaptiveValue('gap', 48, 24);
+    @include adaptiveValue('margin-bottom', 24, 8);
+    @media (max-width: 1168px){
+      grid-template-columns: repeat(auto-fit, minmax(rem(304), 1fr));
+    }
+    @media (max-width: 850px){
+      grid-template-columns: repeat(auto-fit, minmax(rem(239), 1fr));
+    }
+  }
+  &__more{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 16px;
+    font-size: 13px;
+    line-height: 18px;
+    color: #006CB7;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}
+.item{
+  position: relative;
+  background: #FFFFFF;
+  padding: rem(24) rem(24) rem(16) rem(24);
+  display: flex;
+  flex-direction: column;
+  height: rem(543);
+  &:nth-child(4){
+    display: none;
+  }
+  @media (max-width: 1085px){
+    &:nth-child(4){
+      display: flex;
+    }
+  }
+  @media (max-width: 850px){
+    &:nth-child(3){
+      display: none;
+    }
+    &:nth-child(4){
+      display: none;
+    }
+  }
+
+  &__background {
+    position: absolute;
+    left: -2px;
+    right: 0;
+    z-index: -1;
+    top: 1.47%;
+    height: rem(242);
+    background-color: $goldColor;
+  }
+  &__image{
+    display: block;
+    margin-left: rem(-48);
+    @include adaptiveValue('margin-bottom', 24, 8, 1920, 1080, 1);
+    img{
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+  }
+  &__title{
+    font-weight: 500;
+    font-size: rem(17);
+    line-height: 140%;
+    color: #BC9B62;
+    margin-bottom: rem(16);
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+  &__text{
+    display: inline-block;
+    font-size: 15px;
+    line-height: 150%;
+    color: #374248;
+    flex: 1 1 auto;
+    margin-bottom: rem(17);
+    position: relative;
+    overflow: hidden;
+    max-height: rem(154);
+  }
+  &__text-overflow{
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: rem(17);
+  background: linear-gradient(180.21deg, rgba(255, 255, 255, 0) -31.72%, #FFFFFF 83.9%);
+  }
+  &__info{
+    border-top: 1px solid #BC9B62;
+    padding-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    line-height: 150%;
+    color: #8C999B;
+    margin-top: auto;
+  }
+}
