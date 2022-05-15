@@ -1,0 +1,48 @@
+.actual{
+  &__title{
+    font-size: 24px;
+    line-height: 145%;
+    font-feature-settings: 'liga' off;
+    color: #BC9B62;
+    margin-bottom: rem(28);
+  }
+  &__list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(rem(303), 1fr));
+    @include adaptiveValue('gap', 64, 40);
+    @include adaptiveValue('margin-bottom', 24, 8);
+    @media (max-width: 1168px){
+      grid-template-columns: repeat(auto-fit, minmax(rem(304), 1fr));
+    }
+    @media (max-width: 850px){
+      grid-template-columns: repeat(auto-fit, minmax(rem(239), 1fr));
+    }
+  }
+  &__item{
+    &:nth-child(4){
+      display: flex;
+    }
+    @media (max-width: 1096px){
+      &:nth-child(3){
+        display: none;
+      }
+      &:nth-child(4){
+        display: none;
+      }
+      &:nth-child(5){
+        display: none;
+      }
+      &:nth-child(6){
+        display: none;
+      }
+    }
+
+  }
+  &__actions{
+    display: flex;
+    @include adaptiveValue("gap",32 , 24);
+  }
+  &__mailing{
+    margin-left: auto;
+  }
+}

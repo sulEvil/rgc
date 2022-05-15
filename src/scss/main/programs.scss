@@ -1,0 +1,176 @@
+.programs{
+  margin-bottom: rem(61);
+  &__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__title{
+    @include adaptiveValue('font-size', 28, 18);
+    line-height: 145%;
+    color: #BC9B62;
+    margin-bottom: rem(36);
+  }
+  &__content{
+    margin-top: -115px;
+    @media (max-width: 900px){
+      margin-top: 0;
+    }
+  }
+  &__slider{
+    display: flex;
+    flex-direction: column;
+    @media (max-width: 900px){
+      flex-direction: column-reverse;
+    }
+  }
+  &__arrows{
+    display: flex;
+    align-self: flex-end;
+    align-items: center;
+    gap: 23px;
+    margin-left: auto;
+    margin-bottom: rem(36);
+    @include adaptiveValue('margin-top', 50, 20, 900, 320, 1);
+    @media (max-width: 560px){
+      margin: 16px auto;
+    }
+
+  }
+  &__left{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 5px 1px;
+  }
+  &__right{
+    padding: 5px 1px;
+    display: flex;
+    align-items: center;
+    transform: rotate(180deg);
+    cursor: pointer;
+    &.arrow-active{
+      svg path{
+        fill: $goldColor;
+      }
+    }
+  }
+  &__program{
+    background: #FFFFFF;
+    box-shadow: 0px 2px 25px rgba(128, 143, 145, 0.07), 0px 2px 20px rgba(123, 141, 143, 0.05);
+    @include adaptiveValue('padding-top', 50, 40, 1920, 900, 1);
+    @include adaptiveValue('padding-bottom', 50, 40, 1920, 900, 1);
+    @include adaptiveValue('padding-left', 50, 25, 1920, 900, 1);
+    @include adaptiveValue('padding-right', 37, 25, 1920, 900, 1);
+  }
+}
+
+.program{
+    display: flex;
+    position: relative;
+  @media (max-width: 900px){
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+    @include adaptiveValue('gap', 40, 20, 1920, 1080, 1);
+  &__content{
+    flex: 1 1 auto;
+  }
+  &__image{
+    @include adaptiveValue('margin-top', -0, -57, 900, 320, 1);
+    img{
+      @include adaptiveValue('width', 400, 340, 1920, 900, 1);
+      @include adaptiveValue('height', 400, 340, 1080, 900, 1);
+      object-fit: cover;
+      @media (max-width: 900px){
+        @include adaptiveValue('width', 400, 220, 900, 320, 1);
+        @include adaptiveValue('height', 400, 220, 900, 320, 1);
+      }
+    }
+  }
+  &__title{
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #BC9B62;
+    @include adaptiveValue('font-size', 30, 24, 1080, 320, 1);
+    @include adaptiveValue('margin-bottom', 32, 20, 1080, 320, 1);
+  }
+  &__text{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    @include adaptiveValue('height', 200, 160, 1080, 320, 1);
+    font-size: 15px;
+    line-height: 150%;
+    color: #262B30;
+    overflow: hidden;
+  }
+  &__text-mask{
+    position: absolute;
+    bottom: 0;
+    top: 39.11%;
+    left: 0;
+    right: 0;
+    background: linear-gradient(180.21deg, rgba(255, 255, 255, 0) -31.72%, #FFFFFF 83.9%);
+  }
+  &__subtitle{
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 150%;
+    color: #262B30;
+    margin-top: auto;
+    margin-bottom: rem(42);
+    @include adaptiveValue('margin-bottom', 42, 20, 1080, 320, 1);
+  }
+  &__more{
+    display: inline-flex;
+    align-items: center;
+    gap: rem(16);
+    font-size: 13px;
+    line-height: 18px;
+    color: #006CB7;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}
+.corner{
+  &__top-left{
+    position: absolute;
+    width: rem(40);
+    height: rem(40);
+    top: -20px;
+    left: -20px;
+    background: $bodyColor;
+    border-radius: 0 0 50% 0;
+  }
+  &__top-right{
+    position: absolute;
+    width: rem(40);
+    height: rem(40);
+    top: -20px;
+    right: -20px;
+    background: $bodyColor;
+    border-radius: 0 0 0 50%;
+  }
+  &__bottom-left{
+    position: absolute;
+    width: rem(40);
+    height: rem(40);
+    bottom: -20px;
+    left: -20px;
+    background: $bodyColor;
+    border-radius: 0 50% 0 0;
+  }
+  &__bottom-right{
+    position: absolute;
+    width: rem(40);
+    height: rem(40);
+    bottom: -20px;
+    right: -20px;
+    background: $bodyColor;
+    border-radius: 50% 0 0 0;
+  }
+}

@@ -1,0 +1,16 @@
+.name{
+  &__container{
+    @include adaptiveValue('padding-top', 103, 32);
+    @include adaptiveValue('padding-bottom', 129, 32);
+  }
+  &__title{
+    font-family: 'AGBengaly';
+    @include adaptiveValue('max-width', 463, 255);
+    font-style: normal;
+    font-weight: 400;
+    font-size: rem(40);
+    @include adaptiveValue('font-size', 40, 22);
+    line-height: 150%;
+    color: #1A2141;
+  }
+}
