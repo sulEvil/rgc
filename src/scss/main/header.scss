@@ -1,4 +1,6 @@
 .header{
+  position: relative;
+  z-index: 1;
   &__container{
     display: flex;
     flex-direction: column;
@@ -38,9 +40,12 @@
     line-height: 16px;
     color: #FFFFFF;
     white-space: nowrap;
+    cursor: pointer;
+
   }
   &__login{
-    @media (max-width: 480px){
+    cursor: pointer;
+    @media (max-width: 580px){
       display: none;
     }
   }

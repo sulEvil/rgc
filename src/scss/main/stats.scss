@@ -4,7 +4,7 @@
   overflow: hidden;
   position: relative;
   max-width: 1920px;
-  margin: 0 auto;
+  margin: 20px auto;
   &__container{
     height: rem(520);
     margin-bottom: 100px;
@@ -34,8 +34,8 @@
     position: absolute;
     z-index: 1;
     background: center / contain no-repeat url("@img/main/background/stats/circle.png");
-    width: rem(492);
-    height: rem(492);
+    @include adaptiveValue("width", 492, 215);
+    @include adaptiveValue("height", 492, 215);
     border-radius: 50%;
   }
   &__points{
@@ -74,32 +74,37 @@
   &__branch{
     top: 0;
     right: 39.51%;
-    font-size: 80px;
-    line-height: 85px;
+    @include adaptiveValue("font-size", 80, 35);
+    @include adaptiveValue("line-height", 85, 37);
   }
   &__employ{
     top: 21.61%;
     right: 62.75%;
-    font-size: 75px;
-    line-height: 80px;
+    @include adaptiveValue("font-size", 75, 35);
+    @include adaptiveValue("line-height", 88, 37);
+    @media (max-width: 1560px){
+      right: 62.75%;
+    }
+
   }
   &__animals{
-    font-size: 65px;
-    line-height: 69px;
+    @include adaptiveValue("line-height", 69, 37);
+    @include adaptiveValue("font-size", 65, 35);
     top: 24.6%;
     right: 23.29%;
   }
   &__circus{
     top: 69.47%;
     right: 65.54%;
-    font-size: 76px;
-    line-height: 81px;
+    @include adaptiveValue("font-size", 76, 35);
+    @include adaptiveValue("line-height", 81, 37);
   }
   &__shapito{
     top: 74.88%;
     right: 33.19%;
     font-size: 88px;
-    line-height: 94px;
+    @include adaptiveValue("font-size", 88, 35);
+    @include adaptiveValue("line-height", 94, 37);
   }
   &__text{
     top: 50%;
@@ -131,6 +136,7 @@
     height: rem(1);
     width: rem(172);
     background: $goldColor;
+
   }
   &__right-line{
     top: 50%;
@@ -142,8 +148,8 @@
   &__year-from{
     position: absolute;
     font-family: 'AGBengaly';
-    font-size: 112px;
-    line-height: 123px;
+    @include adaptiveValue("font-size", 112, 50, 1920, 560, 1);
+    @include adaptiveValue("line-height",123, 55);
     color: $goldColor;
     left: 6%;
     top: 50%;
@@ -152,8 +158,8 @@
   &__year-to{
     position: absolute;
     font-family: 'AGBengaly';
-    font-size: 112px;
-    line-height: 123px;
+    @include adaptiveValue("font-size", 112, 50, 1920, 560, 1);
+    @include adaptiveValue("line-height",123, 55);
     color: $redColor;
     right: 6%;
     top: 50%;

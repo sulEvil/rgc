@@ -29,6 +29,9 @@
     font-size: 13px;
     line-height: 18px;
     color: #006CB7;
+    position: relative;
+    z-index: 1;
+    @include adaptiveValue("margin-top", 6, 20);
     &:hover{
       text-decoration: underline;
     }

@@ -1,9 +1,35 @@
 .calendar{
-  margin-bottom: rem(80);
+  margin-bottom: rem(40);
+  padding-top: rem(20);
   &__container{
     display: flex;
+  }
+  &__wrapper{
     position: relative;
-    height: 440px;
+    height: rem(650);
+    width: 100%;
+    @media (min-width:860px){
+      @include adaptiveValue("height", 650, 447, 1920, 960, 1);
+    }
+    @media (max-width: 860px){
+      height: auto;
+      background: center/cover no-repeat url("@img/main/background/calendar/background_phone.png");
+      display: flex;
+      justify-content: center;
+      padding: rem(33) rem(25);
+      margin: 60px 0;
+      &:before{
+        content: '';
+        position: absolute;
+        display: block;
+        left: 16px;
+        right: 16px;
+        top: -7px;
+        bottom: -7px;
+        background: $redColor;
+        z-index: -1;
+      }
+    }
   }
   &__background{
     position: absolute;
@@ -11,8 +37,11 @@
     top: 0;
     right: 0;
     bottom: 0;
+    @media (max-width: 860px){
+      display: none;
+    }
     img{
-      object-fit: cover;
+      object-fit: contain;
       width: 100%;
       max-width: 100%;
     }
@@ -25,13 +54,26 @@
     align-items: center;
     max-width: rem(300);
     text-align: center;
-    margin-left: rem(87);
+    margin-left: 15%;
+    margin-top: 15%;
+    @media (max-width: 1150px){
+      margin-left: 13%;
+      margin-top: 13%;
+    }
+    @media (max-width: 1050px){
+      margin-left: 12%;
+      margin-top: 12%;
+    }
+    @media (max-width: 860px){
+      margin: 0;
+    }
   }
   &__title{
     padding-bottom: rem(20);
     border-bottom: 2px dashed #FFFFFF;
     font-family: 'AGBengaly';
     font-size: 45px;
+    @include adaptiveValue("font-size", 45, 33);
     line-height: 100%;
     color: #FFFFFF;
     position: relative;
