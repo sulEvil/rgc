@@ -1,0 +1,37 @@
+.loyal{
+  &__container{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+  &__title{
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 32px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #374248;
+  }
+  &__subtitle{
+    font-family: 'AGBengaly';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 43px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #BC9B62;
+  }
+  &__line{
+
+    &_top{
+
+    }
+    &_middle{
+
+    }
+    &_bottom{
+
+    }
+  }
+}

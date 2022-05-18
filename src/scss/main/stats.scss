@@ -115,7 +115,7 @@
     }
     @media (max-width: 590px){
       top: 28%;
-      right: 64%;
+      right: 61%;
     }
   }
   &__animals{
@@ -169,7 +169,7 @@
       right: 28%;
     }
     @media (max-width: 820px){
-      top: 72%;
+      top: 69%;
       right: 52%;
     }
     @media (max-width: 590px){
@@ -245,7 +245,7 @@
       left: 66%;
     }
     @media (max-width: 820px){
-      top: 72%;
+      top: 70.5%;
       left: 50%;
       height: rem(172);
       width: rem(1);
@@ -275,7 +275,7 @@
       transform: translate(-50%, -50%);
     }
     @media (max-width: 590px){
-      top: 20%;
+      top: 22%;
       letter-spacing: -0.15em;
     }
   }
@@ -298,6 +298,9 @@
       top: 84%;
       left: 50%;
       transform: translate(-50%, -50%);
+    }
+    @media (max-width: 590px){
+      top: 82%;
       letter-spacing: -0.15em;
     }
   }
