@@ -5,6 +5,7 @@
   position: relative;
   max-width: 1920px;
   margin: 20px auto;
+  text-align: center;
   &__container{
     height: rem(520);
     margin-bottom: 100px;
@@ -37,6 +38,9 @@
     @include adaptiveValue("width", 492, 215);
     @include adaptiveValue("height", 492, 215);
     border-radius: 50%;
+    @media (max-width: 820px){
+      background: center / contain no-repeat url("@img/main/background/stats/circle_phone.png");
+    }
   }
   &__points{
     position: absolute;
@@ -44,6 +48,8 @@
     background: center / contain no-repeat url("@img/main/background/stats/points.png");
     width: rem(430);
     height: rem(430);
+    @include adaptiveValue("width", 430, 183);
+    @include adaptiveValue("height", 430, 183);
     border-radius: 50%;
   }
   &__content{
@@ -60,7 +66,7 @@
     font-weight: 400;
   }
   &__count{
-    font-size: 16px;
+    @include adaptiveValue("font-size", 16, 11);
     line-height: 22px;
     color: #1A2141;
   }
@@ -76,6 +82,21 @@
     right: 39.51%;
     @include adaptiveValue("font-size", 80, 35);
     @include adaptiveValue("line-height", 85, 37);
+    @media (max-width: 1360px){
+      top: 2%;
+      right: 35%;
+    }
+    @media (max-width: 1160px){
+      top: 6%;
+      right: 35%;
+    }
+    @media (max-width: 820px){
+      top: 68%;
+      right: 18%;
+    }
+    @media (max-width: 590px){
+      top: 63%;
+    }
   }
   &__employ{
     top: 21.61%;
@@ -83,21 +104,57 @@
     @include adaptiveValue("font-size", 75, 35);
     @include adaptiveValue("line-height", 88, 37);
     @media (max-width: 1560px){
-      right: 62.75%;
+      right: 66%;
     }
-
+    @media (max-width: 1360px){
+      right: 68%;
+    }
+    @media (max-width: 820px){
+      top: 20%;
+      right: 60%;
+    }
+    @media (max-width: 590px){
+      top: 28%;
+      right: 64%;
+    }
   }
   &__animals{
     @include adaptiveValue("line-height", 69, 37);
     @include adaptiveValue("font-size", 65, 35);
     top: 24.6%;
     right: 23.29%;
+    @media (max-width: 1560px){
+      right: 20%;
+    }
+    @media (max-width: 1360px){
+      right: 18%;
+    }
+    @media (max-width: 1260px){
+      right: 16%;
+    }
+    @media (max-width: 820px){
+      top: 20%;
+      right: 16%;
+    }
+    @media (max-width: 590px){
+      top: 28%;
+      right: 12%;
+    }
   }
   &__circus{
     top: 69.47%;
     right: 65.54%;
     @include adaptiveValue("font-size", 76, 35);
     @include adaptiveValue("line-height", 81, 37);
+    @media (max-width: 820px){
+      top: 62%;
+      right: 64%;
+    }
+    @media (max-width: 590px){
+      top: 60%;
+      right: 64%;
+    }
+
   }
   &__shapito{
     top: 74.88%;
@@ -105,6 +162,20 @@
     font-size: 88px;
     @include adaptiveValue("font-size", 88, 35);
     @include adaptiveValue("line-height", 94, 37);
+    @media (max-width: 1560px){
+      right: 31%;
+    }
+    @media (max-width: 1260px){
+      right: 28%;
+    }
+    @media (max-width: 820px){
+      top: 72%;
+      right: 52%;
+    }
+    @media (max-width: 590px){
+      top: 70%;
+      right: 52%;
+    }
   }
   &__text{
     top: 50%;
@@ -117,18 +188,32 @@
   }
   &__title{
     font-family: 'AGBengaly';
-    font-size: 75px;
-    line-height: 80px;
+    line-height: 106.6%;
     letter-spacing: -0.04em;
     text-transform: uppercase;
     color: #BC9B62;
     text-align: center;
+    &_top{
+      @include adaptiveValue("font-size", 75, 34);
+      line-height: 106.6%;
+    }
+    &_middle{
+      @include adaptiveValue("font-size", 73, 33);
+      line-height: 106.6%;
+    }
+    &_bottom{
+      @include adaptiveValue("font-size", 60, 22);
+      line-height: 106.6%;
+    }
   }
   &__subTitle{
     font-weight: 500;
-    font-size: 25px;
-    line-height: 34px;
+    line-height: 135%;
     color: #1A2141;
+    @include adaptiveValue("font-size", 25, 9.715);
+    @media (max-width: 960px){
+      font-weight: 300;
+    }
   }
   &__left-line{
     top: 50%;
@@ -136,7 +221,19 @@
     height: rem(1);
     width: rem(172);
     background: $goldColor;
-
+    @media (max-width: 880px){
+      left: 34%;
+    }
+    @media (max-width: 820px){
+      top: 30%;
+      left: 50%;
+      height: rem(172);
+      width: rem(1);
+    }
+    @media (max-width: 590px){
+      top: 35%;
+      right: 64%;
+    }
   }
   &__right-line{
     top: 50%;
@@ -144,6 +241,18 @@
     height: rem(1);
     width: rem(172);
     background: $redColor;
+    @media (max-width: 880px){
+      left: 66%;
+    }
+    @media (max-width: 820px){
+      top: 72%;
+      left: 50%;
+      height: rem(172);
+      width: rem(1);
+    }
+    @media (max-width: 590px){
+      top: 69%;
+    }
   }
   &__year-from{
     position: absolute;
@@ -153,7 +262,22 @@
     color: $goldColor;
     left: 6%;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translate(0, -50%);
+    @media (max-width: 1060px){
+      left: 4%;
+    }
+    @media (max-width: 960px){
+      left: 3%;
+    }
+    @media (max-width: 820px){
+      top: 15%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    @media (max-width: 590px){
+      top: 20%;
+      letter-spacing: -0.15em;
+    }
   }
   &__year-to{
     position: absolute;
@@ -164,6 +288,18 @@
     right: 6%;
     top: 50%;
     transform: translateY(-50%);
+    @media (max-width: 1060px){
+      right: 4%;
+    }
+    @media (max-width: 960px){
+      right: 3%;
+    }
+    @media (max-width: 820px){
+      top: 84%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      letter-spacing: -0.15em;
+    }
   }
 }
 .beams{
