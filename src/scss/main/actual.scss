@@ -1,10 +1,9 @@
 .actual{
   &__title{
-    font-size: 24px;
-    line-height: 145%;
     font-feature-settings: 'liga' off;
     color: #BC9B62;
-    margin-bottom: rem(28);
+    @include adaptiveValue('font-size', 24, 18);
+    @include adaptiveValue("margin-bottom", 36, 23, 1920, 320, 1);
   }
   &__list{
     display: grid;

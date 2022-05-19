@@ -5,9 +5,9 @@
   }
   &__title{
     color: $goldColor;
-    @include adaptiveValue('font-size', 28, 18);
     line-height: 145%;
-    margin-bottom: rem(36);
+    @include adaptiveValue('font-size', 28, 18);
+    @include adaptiveValue("margin-bottom", 36, 23, 1920, 320, 1);
   }
   &__list{
     display: grid;

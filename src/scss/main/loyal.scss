@@ -1,37 +1,94 @@
 .loyal{
+  margin-bottom: 50px;
   &__container{
+    position: relative;
     display: flex;
     justify-content: space-between;
     text-align: center;
+    @media (max-width: 860px){
+      flex-direction: column-reverse;
+    }
+  }
+  .buttons__button{
+    @media (min-width: 860px){
+      display: none;
+    }
   }
   &__title{
     font-family: 'Noto Sans';
     font-style: normal;
     font-weight: 200;
     font-size: 32px;
+    @include adaptiveValue("font-size", 32, 21, 1920, 320, 1);
     line-height: 100%;
     text-transform: uppercase;
     color: #374248;
+    margin-bottom: 55px;
+    @media (max-width: 860px){
+      margin-bottom: 22px;
+      margin-top: -25px;
+    }
   }
   &__subtitle{
     font-family: 'AGBengaly';
     font-style: normal;
     font-weight: 400;
-    font-size: 43px;
+    @include adaptiveValue("font-size", 43, 32, 1920, 560, 1);
     line-height: 100%;
     text-transform: uppercase;
     color: #BC9B62;
+    white-space: nowrap;
+    @media (max-width: 860px){
+      display: none;
+    }
+  }
+
+  &__more{
+    @media (min-width: 860px){
+      display: none;
+    }
+  }
+  &__image{
+    img{
+      max-width: 100%;
+    }
+  }
+  &__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
   }
   &__line{
-
+    position: absolute;
+    display: block;
+    height: 1px;
+    z-index: -1;
+    right: 21%;
+    @media (max-width: 860px){
+      display: none;
+    }
+    @media (max-width: 1150px){
+    right: 15%;
+    }
+    @media (max-width: 1150px){
+      right: 15%;
+    }
     &_top{
-
+      top: 50%;
+      background: #BC9B62;
+      left: 4.1%;
     }
     &_middle{
-
+      top: 51%;
+      background: #B93337;
+      left: 14.47%;
     }
     &_bottom{
-
+      top: 52%;
+      background: #1A2141;
+      left: 29.58%;
     }
   }
 }

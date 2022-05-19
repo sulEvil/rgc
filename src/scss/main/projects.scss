@@ -1,14 +1,14 @@
 .projects{
+  margin-bottom: 30px;
   &__container{
     @include adaptiveValue("padding-left", 48, 24, 1080,320,1);
     @include adaptiveValue("padding-right", 48, 24, 1080,320,1);
     margin-bottom: rem(11);
   }
   &__title{
-    font-size: 24px;
-    line-height: 145%;
     color: #BC9B62;
-    margin-bottom: rem(28);
+    @include adaptiveValue('font-size', 24, 18);
+    @include adaptiveValue("margin-bottom", 36, 23, 1920, 320, 1);
   }
   &__list{
     display: grid;

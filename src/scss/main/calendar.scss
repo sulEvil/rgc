@@ -3,6 +3,7 @@
   padding-top: rem(20);
   &__container{
     display: flex;
+    align-items: center;
   }
   &__wrapper{
     position: relative;
@@ -79,4 +80,5 @@
     position: relative;
     margin-bottom: 24px;
   }
+
 }
