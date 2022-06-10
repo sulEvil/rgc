@@ -150,6 +150,7 @@ body {
 @import 'popups';
 @import 'menu';
 
+
 // Подключение scss главной страницы
 @import "main/backgrounds";
 @import "main/header";
@@ -162,5 +163,6 @@ body {
 @import "main/projects";
 @import "main/actual";
 @import "main/loyal";
+@import "backgrounds_sec";
 // Подключение стилей отдельных страниц
 @import "home";
