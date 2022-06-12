@@ -85,22 +85,26 @@
     display: flex;
     gap: 16px;
     flex-direction: row;
+    flex-wrap: wrap;
   }
   &__file-input{
     padding: 10px 21px;
     color: white;
     background: #006CB7;
+    cursor: pointer;
+    text-align: center;
   }
   &__file-text{
     font-size: 12px;
     line-height: 150%;
     color: #EF4523;
-
+    cursor: pointer;
   }
   &__checkbox{
     display: flex;
     flex-direction: column;
     gap: 18px;
+    flex-shrink: 0;
   }
   &__selection{
     display: flex;

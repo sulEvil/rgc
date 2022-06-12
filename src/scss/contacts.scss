@@ -1,9 +1,16 @@
 .contacts{
   margin-bottom: 100px;
+  & .buttons__button{
+    margin-bottom: 24px;
+  }
+  & .label__file{
+    margin-bottom: 24px;
+  }
   &__blocks{
     display: flex;
     gap: 24px;
     flex-wrap: wrap;
+    margin-bottom: 24px;
         &_twice{
       & .contacts__left{
         flex: 1 1 60%;
@@ -15,6 +22,15 @@
   }
   &__left{
     flex-basis: 50%;
+    @media (max-width: 1280px){
+      flex-basis: 60%;
+    }
+    @media (max-width: 1060px){
+      flex-basis: 75%;
+    }
+    @media (max-width: 660px){
+      flex-basis: 100%;
+    }
   }
   &__block{
     display: flex;
@@ -23,5 +39,20 @@
   }
   &__submit{
     width: 50%;
+    @media (max-width: 1280px){
+      width: 60%;
+    }
+    @media (max-width: 1060px){
+      width: 75%;
+    }
+    @media (max-width: 660px){
+      width: 100%;
+    }
+  }
+  &__require{
+    margin-bottom: 24px;
+    span{
+      color: #EF4523;
+    }
   }
 }

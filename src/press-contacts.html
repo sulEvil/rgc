@@ -40,8 +40,8 @@
                     <div class="contacts__block contacts__right"></div>
                 </div>
                 <div class="contacts__submit">
-                    <div class="label label__file">
-                        <input type="text" class="input__file">
+                    <label class="label label__file">
+                        <input type="file" class="input__file" accept=".xls,.xlsx,.pdf,.txt,.rtf">
                         <div class="label__file-input">
                             Прикрепить файл
                         </div>
@@ -49,6 +49,29 @@
                             Размер файла не более 5МБ <br>
                             Допустимые форматы: doc, docx, xls, xlsx, pdf, txt, rtf.
                         </div>
+                    </label>
+                    <label class="robot">
+                        Я не робот
+                    </label>
+                    <div class="contacts__require">
+                        <span>*</span> - обязательные поля
+                    </div>
+                    <button type="submit" class="buttons__button">
+                        Отправить
+                    </button>
+                    <div class="label__checkbox-item">
+                        <label class="label__check">
+                            <input hidden class="input__check" type="checkbox" name="check" value="notifications">
+                            <span class="label__checkbox">
+										</span>
+                            Получить e-mail уведомление об ответе
+                        </label>
+                        <label class="label__check">
+                            <input hidden class="input__check" type="checkbox" name="check" value="personal">
+                            <span class="label__checkbox">
+										</span>
+                            С условиями обработки персональных данных ознакомлен
+                        </label>
                     </div>
                 </div>
             </form>

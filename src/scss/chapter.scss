@@ -50,6 +50,14 @@
   @media (max-width: 960px){
     justify-self: center;
   }
+  &__source{
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 140%;
+    color: #006CB7;
+    margin-bottom: 16px;
+  }
   &__background{
     position: absolute;
     z-index: -1;
