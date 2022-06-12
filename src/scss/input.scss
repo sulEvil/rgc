@@ -7,6 +7,9 @@
     margin-top: 19px;
 
   }
+  &__file{
+    display: none;
+  }
   &__textarea{
     resize: none;
     font-weight: 300;
@@ -15,6 +18,7 @@
     color: #8C999B;
     padding: 11px 19px;
     outline: none;
+    border: 1px solid #D3D3D3;
   }
   &__text {
     font-weight: 300;
@@ -25,9 +29,6 @@
     border: 1px solid #D3D3D3;
     border-radius: 3px;
     padding: 11px 18px;
-    &:not(:empty) ~ .input__placeholder{
-      background: blue;
-    }
   }
   &:focus{
     border: 1px solid #8C999B;
@@ -79,6 +80,21 @@
   overflow: hidden;
   &__option[disabled]{
     color: #374248;
+  }
+  &__file{
+    display: flex;
+    gap: 16px;
+  }
+  &__file-input{
+    padding: 10px 21px;
+    color: white;
+    background: #006CB7;
+  }
+  &__file-text{
+    font-size: 12px;
+    line-height: 150%;
+    color: #EF4523;
+
   }
   &__checkbox{
     display: flex;
@@ -172,4 +188,34 @@
     background: no-repeat center url("@img/ui/checked.png");
     border-color: #006CB7;
   }
+}
+.input__text:focus ~ .input__placeholder {
+  display: none;
+}
+
+.input__text:not(:-moz-placeholder-shown) ~ .input__placeholder {
+  display: none;
+}
+
+.input__text:not(:-ms-input-placeholder) ~ .input__placeholder {
+  display: none;
+}
+
+.input__text:not(:placeholder-shown) ~ .input__placeholder {
+  display: none;
+}
+.input__textarea:focus ~ .input__placeholder {
+  display: none;
+}
+
+.input__textarea:not(:-moz-placeholder-shown) ~ .input__placeholder {
+  display: none;
+}
+
+.input__textarea:not(:-ms-input-placeholder) ~ .input__placeholder {
+  display: none;
+}
+
+.input__textarea:not(:placeholder-shown) ~ .input__placeholder {
+  display: none;
 }

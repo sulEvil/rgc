@@ -1,0 +1,25 @@
+.contacts{
+  margin-bottom: 100px;
+  &__blocks{
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+        &_twice{
+      & .contacts__left{
+        flex: 1 1 60%;
+      }
+      & .contacts__right{
+        flex: 1 1 40%;
+      }
+    }
+  }
+  &__left{
+    flex-basis: 50%;
+  }
+  &__block{
+    display: flex;
+    flex-direction: column;
+    @include adaptiveValue("gap", 24, 16, 1920, 320, 1);
+  }
+
+}

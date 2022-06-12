@@ -5,6 +5,8 @@
   display: flex;
   gap: 20px;
   justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 34px;
 }
 .page-title{
   font-weight: 400;
@@ -14,4 +16,27 @@
   &:after{
     content: " . . . .";
   }
+}
+.page-filter{
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  &__item{
+    padding: 14px 16px;
+    background: white;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 90.7%;
+    color: #374248;
+    cursor: pointer;
+    &_active{
+      color: #F7F9FB;
+      background: #1A2141;
+    }
+  }
+}
+.arrow-right{
+  transform: rotate(180deg);
 }

@@ -74,6 +74,7 @@ body {
 	flex-direction: column;
 	position: relative;
 	z-index: 3;
+	overflow: hidden;
 	// Прижимаем footer
 	> main {
 		flex: 1 1 auto;
@@ -136,6 +137,10 @@ body {
 
 // Подключение стилей общих элементов проекта
 @import "common";
+@import "breadcrumbs";
+@import "chapter";
+@import "detail";
+@import "contacts";
 
 // Подключение стилей отдельных блоков
 @import "header";
@@ -163,6 +168,7 @@ body {
 @import "main/projects";
 @import "main/actual";
 @import "main/loyal";
-@import "backgrounds_sec";
+
+
 // Подключение стилей отдельных страниц
 @import "home";

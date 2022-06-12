@@ -1,0 +1,183 @@
+.detail{
+  background: #FFFFFF;
+  box-shadow: 0px 2px 25px rgba(128, 143, 145, 0.07), 0px 2px 20px -3px rgba(123, 141, 143, 0.05);
+  @include adaptiveValue("padding-top", 64, 16, 1920, 960, 1);
+  @include adaptiveValue("padding-bottom", 64, 16, 1920, 960, 1);
+  @include adaptiveValue("padding-right", 56, 16, 1920, 960, 1);
+  padding-left: 8px;
+  position: relative;
+  margin-left: 75px;
+  @include adaptiveValue("margin-bottom", 24, 16, 1920, 320, 1);
+  @media (max-width: 820px){
+    margin-left: 0px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  &__container{
+    @include adaptiveValue("margin-bottom", 100, 78, 1920, 320, 1);
+  }
+  &__blocks{
+    display: flex;
+    @include adaptiveValue("gap", 56, 32, 1920,320, 1);
+    @media (max-width: 820px){
+      flex-direction: column;
+    }
+  }
+  &__background{
+    position: absolute;
+    @include adaptiveValue("top", 46, 0, 1920, 920, 1);
+    left: -5px;
+    right: 100%;
+    @include adaptiveValue("height", 413, 314, 1920, 320, 1);
+    background: #BC9B62;
+    z-index: -1;
+    @media (max-width: 820px){
+      display: none;
+    }
+  }
+  &__left{
+    @media (max-width: 820px){
+      margin-right: -16px;
+      margin-left: -16px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .detail__handler{
+        width: 100%;
+        padding: 0 16px;
+      }
+    }
+  }
+  &__print{
+    cursor: pointer;
+  }
+  &__share{
+    cursor: pointer;
+  }
+  &__images{
+    @media (max-width: 820px){
+      width: 100%;
+    }
+  }
+  &__avatar{
+    @include adaptiveValue("width", 465, 277, 1920, 320, 1);
+    @include adaptiveValue("height", 379, 250, 1920, 320, 1);
+    margin-left: -83px;
+    margin-bottom: 8px;
+    @media (max-width: 820px){
+      margin-left: -0px;
+      width: 100%;
+      height: auto;
+    }
+    img{
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      @media (max-width: 820px){
+        object-fit: contain;
+      }
+    }
+  }
+  &__more-images{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
+    gap: 8px;
+    @media (max-width: 1450px){
+      grid-template-columns: repeat(auto-fit, minmax(65px, 1fr));
+    }
+    @media (max-width: 820px){
+
+      display: none;
+    }
+  }
+  &__image{
+    position: relative;
+    &:after{
+      content: "";
+      padding-top: 100%;
+      display: block;
+    }
+    img{
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__arrow{
+    cursor: pointer;
+  }
+  &__arrows{
+    margin-top: 15px;
+    display: flex;
+    align-self: center;
+    justify-content: flex-end;
+    gap: 23px;
+    @media (max-width: 820px){
+      justify-content: center;
+    }
+  }
+  &__title{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 145%;
+    color: #BC9B62;
+    @include adaptiveValue("margin-bottom", 24, 16, 1920, 320, 1);
+    @media (max-width: 820px){
+      padding: 0 16px;
+    }
+  }
+  &__handler{
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    @include adaptiveValue("margin-bottom", 24, 16, 1920, 320, 1);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #8C999B;
+    align-items: center;
+  }
+  &__info{
+    display: flex;
+    gap: 16px;
+  }
+  &__views{
+    display: flex;
+    gap: 8px;
+  }
+  &__actions{
+    display: flex;
+    gap: 8px;
+  }
+  &__quote{
+    font-style: italic;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 150%;
+    color: #374248;
+    @include adaptiveValue("margin-bottom", 24, 16, 1920, 320, 1);
+  }
+  &__description{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 150%;
+    color: #374248;
+    margin-bottom: 24px;
+  }
+  &__more{
+    float: right;
+    display: inline-flex;
+    cursor: pointer;
+    align-items: center;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    color: #006CB7;
+    gap: 16px;
+  }
+
+}

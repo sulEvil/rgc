@@ -1,0 +1,27 @@
+.breadcrumbs__list{
+  @include adaptiveValue("margin-top", 50, 24, 1920, 320, 1);
+  @include adaptiveValue("margin-bottom", 36, 24, 1920, 320, 1);
+  display: flex;
+  flex-wrap: wrap;
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 15px;
+  align-items: center;
+  color: #374248;
+
+}
+.breadcrumbs__item{
+  cursor: pointer;
+  &:not(:last-child){
+    &:after{
+      content: '/';
+      margin: 0 10px;
+      color: #374248;
+    }
+  }
+}
+.breadcrumbs__item_active{
+  color: #006CB7;
+}

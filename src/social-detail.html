@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Главная"
+})
+<body>
+<div class="wrapper">
+    @@include('html/main/_header.htm',{})
+    <main class="page">
+        @@include('html/main/_backgrounds_sec.htm',{})
+        @@include('html/common/_breadcrumbs.htm', {})
+        <div class="page__container">
+            <section class="page-header">
+                <h1 class="page-title">Новости</h1>
+            </section>
+        </div>
+        <div class="detail__container">
+            <div class="detail">
+                <div class="detail__background"></div>
+                <div class="detail__blocks">
+                    <div class="detail__left">
+                        <div class="detail__images">
+                            <div class="detail__avatar">
+                                <img src="@img/placeholders/news/11.png" alt="">
+                            </div>
+                            <ul class="detail__more-images">
+                                <li class="detail__image">
+                                    <img src="@img/placeholders/news/12.png" alt="">
+                                </li>
+                                <li class="detail__image">
+                                    <img src="@img/placeholders/news/12.png" alt="">
+                                </li>
+                                <li class="detail__image">
+                                    <img src="@img/placeholders/news/12.png" alt="">
+                                </li>
+                                <li class="detail__image">
+                                    <img src="@img/placeholders/news/12.png" alt="">
+                                </li>
+                                <li class="detail__image">
+                                    <img src="@img/placeholders/news/12.png" alt="">
+                                </li>
+                                <li class="detail__image">
+                                    <img src="@img/placeholders/news/12.png" alt="">
+                                </li>
+                                <li class="detail__image">
+                                    <img src="@img/placeholders/news/12.png" alt="">
+                                </li>
+                                <li class="detail__image">
+                                    <img src="@img/placeholders/news/12.png" alt="">
+                                </li>
+                            </ul>
+                            <div class="detail__arrows">
+                                <div class="detail__arrow">
+                                    <svg width="47" height="16" viewBox="0 0 47 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.63388 15.7114C9.02111 15.3267 9.02111 14.7029 8.63388 14.3181L3.38569 9.1035L46.0084 9.1035C46.5561 9.1035 47 8.6624 47 8.11827C47 7.57414 46.5561 7.13304 46.0084 7.13304L3.38544 7.13303L8.63388 1.91818C9.02112 1.53342 9.02112 0.909608 8.63388 0.524851C8.24664 0.140093 7.61881 0.140093 7.23158 0.52485L0.313161 7.39899C0.119954 7.57877 -0.000781429 7.83451 -0.000781449 8.11826C-0.00078147 8.40385 0.121506 8.66105 0.316891 8.84099L7.23158 15.7114C7.61881 16.0962 8.24664 16.0962 8.63388 15.7114Z" fill="#8C999B"/>
+                                    </svg>
+                                </div>
+                                <div class="detail__arrow arrow-right">
+                                    <svg width="47" height="16" viewBox="0 0 47 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.63388 15.7114C9.02111 15.3267 9.02111 14.7029 8.63388 14.3181L3.38569 9.1035L46.0084 9.1035C46.5561 9.1035 47 8.6624 47 8.11827C47 7.57414 46.5561 7.13304 46.0084 7.13304L3.38544 7.13303L8.63388 1.91818C9.02112 1.53342 9.02112 0.909608 8.63388 0.524851C8.24664 0.140093 7.61881 0.140093 7.23158 0.52485L0.313161 7.39899C0.119954 7.57877 -0.000781429 7.83451 -0.000781449 8.11826C-0.00078147 8.40385 0.121506 8.66105 0.316891 8.84099L7.23158 15.7114C7.61881 16.0962 8.24664 16.0962 8.63388 15.7114Z" fill="#BC9B62"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail__right">
+                        <h3 data-da='.detail__left, 819.98, first' class="detail__title">Доброе сердце артиста цирка</h3>
+                        <div class="detail__handler" data-da='.detail__left, 819.99, first'>
+                            <div class="detail__info">
+                                <div class="detail__date">22.12.2021</div>
+                                <div class="detail__views">
+                                    <img src="@img/icons/eye.svg" alt="просмотров">
+                                    35
+                                </div>
+                            </div>
+                            <div class="detail__actions">
+                                <div class="detail__print">
+                                    <img src="@img/icons/print.svg" alt="печать">
+                                </div>
+                                <div class="detail__share">
+                                    <img src="@img/icons/share.svg" alt="поделиться">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="detail__description">
+                            Коллектив программы «Аливрувер» имеет не только потрясающе интересную программу, но и невероятно доброе и открытое сердце.
+                            <br>
+                            <br>
+                            К такому выводу пришли все, кто побывал на встрече с артистами в Курском госпитале для ветеранов войны. Мастера манежа приехали в лечебное учреждение, чтобы порадовать зрителей, которые по состоянию здоровья в цирк сходить не могут.
+                            <br>
+                            <br>
+                            Несмотря на то, что артисты продемонстрировали лишь несколько номеров из своей программы, все зрители были в полном восторге. «Мне очень понравилось выступление! Я очень довольна тем, что не забывают пожилых и больных людей, приезжают к ним, это очень и очень хорошо», – поделилась своими впечатлениями от встречи с артистами одна из зрительниц.
+                            <br>
+                            <br>
+                            «Конечно, мы показали не все, а лишь малую часть того, что мы смогли привезти, – рассказала дрессировщица Анастасия Филатова-Клыкова. – Зритель был даже очень теплый, это все равно, как перед детьми выступать, так и перед старшим поколением – это всегда приятно. Они всегда поддерживают, как твои родители, как бабушка с дедушкой, это приятно, это чувствуется и, конечно, мы выступали с полной отдачей».
+                            <br>
+                            <br>
+                            Гастроли программы «Аливрувер» в Курском цирке продлятся до 13 октября.
+                         </div>
+                        <div class="detail__handler">
+                            <div class="detail__info">
+                                <div class="detail__date">22.12.2021</div>
+                                <div class="detail__views">
+                                    <img src="@img/icons/eye.svg" alt="просмотров">
+                                    35
+                                </div>
+                            </div>
+                            <div class="detail__actions">
+                                <div class="detail__print">
+                                    <img src="@img/icons/print.svg" alt="печать">
+                                </div>
+                                <div class="detail__share">
+                                    <img src="@img/icons/share.svg" alt="поделиться">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="./social-projects.html" class="detail__more">
+                К списку
+                <img src="@img/icons/arrow-left.svg" alt="">
+            </a>
+        </div>
+    </main>
+    @@include('html/_footer.htm',{})
+</div>
+@@include('html/_js.htm',{})
+</body>
+</html>

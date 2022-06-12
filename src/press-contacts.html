@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Главная"
+})
+<body>
+<div class="wrapper">
+    @@include('html/main/_header.htm',{})
+    <main class="page">
+        @@include('html/main/_backgrounds_sec.htm',{})
+        @@include('html/common/_breadcrumbs.htm', {})
+        <div class="page__container">
+            <section class="page-header">
+                <h1 class="page-title">Контакты пресс-центра</h1>
+            </section>
+        </div>
+        <div class="contacts__container">
+            <form class="contacts">
+                <div class="contacts__info">
+
+                </div>
+                <div class="contacts__blocks">
+                    <div class="contacts__block contacts__left">
+                        <label class="label">
+                            <input type="text" class="input__text" placeholder=" ">
+                            <span class="input__placeholder">Ваши фамилия, имя и отчество<span>*</span></span>
+                        </label>
+                        <label class="label">
+                            <input type="text" class="input__text" placeholder=" ">
+                            <span class="input__placeholder">Ваш e-mail<span>*</span></span>
+                        </label>
+                        <label class="label">
+                            <input type="text" class="input__text" placeholder="Контактный телефон">
+                        </label>
+                        <label class="label">
+                            <textarea rows="8" class="input__textarea" placeholder=" "></textarea>
+                            <span class="input__placeholder">Текст сообщения<span>*</span></span>
+                        </label>
+                    </div>
+                    <div class="contacts__block contacts__right"></div>
+                </div>
+                <div class="contacts__submit">
+                    <div class="label label__file">
+                        <input type="text" class="input__file">
+                        <div class="label__file-input">
+                            Прикрепить файл
+                        </div>
+                        <div class="label__file-text">
+                            Размер файла не более 5МБ <br>
+                            Допустимые форматы: doc, docx, xls, xlsx, pdf, txt, rtf.
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+    @@include('html/_footer.htm',{})
+</div>
+@@include('html/_js.htm',{})
+</body>
+</html>

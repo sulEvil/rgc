@@ -9,10 +9,14 @@
   }
   &__circle_red{
     z-index: -3;
-    max-width: 36%;
+    max-width: 35%;
     @media (max-width: 580px){
     max-width: 25%;
     }
+  }
+  &__circle-red_sec{
+    z-index: -3;
+    max-width: 20%;
   }
   &__circle_yel{
     max-width: 70%;
@@ -40,11 +44,21 @@
   }
   &__points_big{
     max-width: 100%;
+    z-index: -1;
     @media (max-width: 580px){
       display: none;
     }
   }
-
+  &__images{
+    z-index: -4;
+    max-width: 52%;
+    height: auto;
+  }
+  &__images_back{
+    z-index: -5;
+    max-width: 40%;
+    height: auto;
+  }
 
 
 }
